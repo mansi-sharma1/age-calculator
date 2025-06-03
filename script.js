@@ -10,16 +10,17 @@ function calculateAge() {
 
     currentDate.setFullYear(currentDate.getFullYear() - age);
     const monthDiff = currentDate.getMonth() - dob.getMonth();
+     
 
     let months = monthDiff;
     if (currentDate.getDate() < dob.getDate()) {
-        months--;
+        months;
     }
 
 
     let days = currentDate.getDate() - dob.getDate();
     if (days < 0) {
-        const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 0).getDate();
+        const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(),0 ). getDate( );
         days = lastDayOfMonth - dob.getDate() + currentDate.getDate();
     }
 
